@@ -1,8 +1,20 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+
+// Components
+import Dashboard from './components/dashboard/Dashboard';
 
 class App extends Component {
   render() {
-    return <div className="App">I'm a recipe app!</div>;
+    return (
+      <BrowserRouter>
+        <div className="App">
+          <Switch>
+            <Route exact path="/" component={Dashboard} />
+          </Switch>
+        </div>
+      </BrowserRouter>
+    );
   }
 }
 
