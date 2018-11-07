@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { signOut } from '../../store/actions/authActions';
 
@@ -10,9 +10,9 @@ const SignedInLinks = props => {
         <NavLink to="/create">New Recipe</NavLink>
       </li>
       <li>
-        <a href="/" onClick={props.signOut}>
+        <Link to="#" onClick={props.signOut}>
           Logout
-        </a>
+        </Link>
       </li>
       <li>
         <NavLink to="/" className="btn btn-floating blue lighten-1">

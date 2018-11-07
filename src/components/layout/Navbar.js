@@ -19,7 +19,9 @@ const Navbar = props => {
         <Link to="/" className="brand-logo">
           KitchenFire
         </Link>
-        {links}
+        <ul class="right hide-on-med-and-down">
+          <li>{links}</li>
+        </ul>
       </div>
     </nav>
   );
