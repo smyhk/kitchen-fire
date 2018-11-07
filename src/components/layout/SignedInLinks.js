@@ -10,7 +10,9 @@ const SignedInLinks = props => {
         <NavLink to="/create">New Recipe</NavLink>
       </li>
       <li>
-        <a onClick={props.signOut}>Logout</a>
+        <a href="https://www.kitchen-fire.com" onClick={props.signOut}>
+          Logout
+        </a>
       </li>
       <li>
         <NavLink to="/" className="btn btn-floating pink lighten-1">
