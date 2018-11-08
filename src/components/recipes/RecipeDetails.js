@@ -17,7 +17,8 @@ const RecipeDetails = props => {
         <div className="card z-depth-0">
           <div className="card-content">
             <span className="card-title">{recipe.title}</span>
-            <p>{recipe.content}</p>
+            <p>{recipe.ingredients}</p>
+            <p>{recipe.directions}</p>
           </div>
           <div className="card-action grey lighten-4 grey-text">
             <div>
@@ -35,7 +36,6 @@ const RecipeDetails = props => {
       </div>
     );
   }
-  // console.info(props);
 };
 
 const mapSateToProps = (state, ownProps) => {
@@ -43,12 +43,12 @@ const mapSateToProps = (state, ownProps) => {
   const recipes = state.firestore.data.recipes;
   const recipe = recipes ? recipes[id] : null;
   return {
-    project: recipe,
+    recipe: recipe,
     auth: state.firebase.auth
   };
 };
 
 export default compose(
   connect(mapSateToProps),
-  firestoreConnect([{ collection: 'projects' }])
+  firestoreConnect([{ collection: 'recipes' }])
 )(RecipeDetails);

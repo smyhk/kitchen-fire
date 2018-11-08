@@ -9,7 +9,8 @@ class CreateRecipe extends Component {
     super(state);
     state = {
       title: '',
-      conent: ''
+      ingredients: '',
+      directions: ''
     };
   }
   handleChange = e => {
@@ -39,10 +40,19 @@ class CreateRecipe extends Component {
           </div>
 
           <div className="input-field">
-            <label htmlFor="content">Recipe Content</label>
+            <label htmlFor="ingredients">Ingredients</label>
             <textarea
               className="materialize-textarea"
-              id="content"
+              id="ingredients"
+              onChange={this.handleChange}
+            />
+          </div>
+
+          <div className="input-field">
+            <label htmlFor="directions">Directions</label>
+            <textarea
+              className="materialize-textarea"
+              id="directions"
               onChange={this.handleChange}
             />
           </div>
@@ -64,7 +74,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    createProject: recipe => dispatch(createRecipe(recipe))
+    createRecipe: recipe => dispatch(createRecipe(recipe))
   };
 };
 
