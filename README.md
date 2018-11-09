@@ -56,6 +56,19 @@ cd /path/to/project/directory
 npm install
 ```
 
+Replace the configuration info in `/src/config/fbConfig.js` with your app's info found by clicking the cog next to `Project Overview`, then `Project Settngs`, and then `Add Firebase to your web app`. Cut and paste the section that looks like
+
+```
+var config = {
+    apiKey: "AIzaSyCOsHC_5ZXHVXQtBazm99RDGiMws9vXl0k",
+    authDomain: "kitchen-fire-f86bd.firebaseapp.com",
+    databaseURL: "https://kitchen-fire-f86bd.firebaseio.com",
+    projectId: "kitchen-fire-f86bd",
+    storageBucket: "kitchen-fire-f86bd.appspot.com",
+    messagingSenderId: "237717565537"
+  };
+```
+
 Launch the app in a local development server (optional)
 
 ```
