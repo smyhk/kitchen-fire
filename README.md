@@ -125,8 +125,9 @@ Deploys the app to Google's cloud hosting services bundled with Firebase.<br>
 ## Built With
 
 - [Create React App](https://github.com/facebook/create-react-app) - The web framework used.
-- [Redux](https://redux.js.org) - State Management.
+- [Redux](https://redux.js.org) - State management.
 - [Firebase](https://firebase.google.com) - Database, authentication, and hosting in one package.
+- [Materialize](https://materializecss.com) - A modern responsive front-end framework based on Material Design
 
 ## Contributing
 
