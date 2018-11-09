@@ -60,12 +60,12 @@ Replace the configuration info in `/src/config/fbConfig.js` with your app's info
 
 ```
 var config = {
-    apiKey: "AIzaSyCOsHC_5ZXHVXQtBazm99RDGiMws9vXl0k",
-    authDomain: "kitchen-fire-f86bd.firebaseapp.com",
-    databaseURL: "https://kitchen-fire-f86bd.firebaseio.com",
-    projectId: "kitchen-fire-f86bd",
-    storageBucket: "kitchen-fire-f86bd.appspot.com",
-    messagingSenderId: "237717565537"
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: ""
   };
 ```
 
