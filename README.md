@@ -8,29 +8,80 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+- `JavaScript Runtime` - [Node.js](https://nodejs.org/en/)
+
+- `A Google Firebase account` - [Firebase](https://firebase.google.com)
+- You will need to create a new project by clicking `Add Project` and filling in the requested info.
+- Click on `Authentication` and then set up sign-in method with `Email/Password`.
+- Click on `Database` in the left menu and then `Create Database` under `Cloud Firestore`.
+- Select the start mode you desire. You will need to define your own security rules based off your needs.<br>
+
+Here are some rules to get you started
 
 ```
-Give examples
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /recipes/{recipe} {
+      allow read, write: if request.auth.uid != null;
+    }
+    match /users/{userId} {
+    	allow create
+      allow read: if request.auth.uid != null
+      allow write: if request.auth.uid == userId
+    }
+    match /notifications/{notification} {
+      allow read: if request.auth.uid != null;
+    }
+  }
+}
+```
+
+Install Firebase tools
+
+```
+npm install -g firebase-tools
 ```
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
+Download or clone the repository
 
 ```
-Give the example
+git clone https://github.com/smyhk/kitchen-fire.git
 ```
 
-And repeat
+Install packages and dependencies
 
 ```
-until finished
+cd /path/to/project/directory
+npm install
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+Launch the app in a local development server (optional)
+
+```
+npm start
+```
+
+Login to Firebase from your console if needed
+
+```
+firebase login
+```
+
+Initialize Firebase in your project
+
+```
+firebase init
+Select `functions` and `hosting`
+Select your Firebase project
+Select language
+Enable ESLint (optional)
+Select `N` to any overwrites
+Install dependencies
+Name your public directory `build`
+Select `Y` to configure as single page app
+```
 
 ## Running the tests
 
@@ -40,22 +91,6 @@ npm test
 
 Launches the test runner in the interactive watch mode.<br>
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
 
 ## Deployment
 
@@ -72,6 +107,8 @@ Your app is ready to be deployed!
 ```
 firebase deploy
 ```
+
+Deploys the app to Google's cloud hosting services bundled with Firebase.<br>
 
 ## Built With
 
