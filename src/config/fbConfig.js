@@ -2,6 +2,7 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 
+/**** Replace with your app configuration info ****/
 // Initialize Firebase
 var config = {
   apiKey: '',
@@ -11,6 +12,7 @@ var config = {
   storageBucket: '',
   messagingSenderId: ''
 };
+/*************************************************/
 
 firebase.initializeApp(config);
 firebase.firestore().settings({ timestampsInSnapshots: true });

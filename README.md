@@ -15,8 +15,7 @@ These instructions will get you a copy of the project up and running on your loc
 - Click on `Authentication` and then set up sign-in method with `Email/Password`.
 - Click on `Database` in the left menu and then `Create Database` under `Cloud Firestore`.
 - Select the start mode you desire. You will need to define your own security rules based off your needs.<br>
-
-Here are some rules to get you started
+- Select the `Rules` tab and replace the default with:
 
 ```
 service cloud.firestore {
