@@ -13,17 +13,15 @@ const RecipeDetails = props => {
   }
   if (recipe) {
     const list = recipe.ingredients.split('\n');
-    const ingredientList = list.map(n => {
-      return <p key={n}>{n}</p>;
+    const ingredientList = list.map((n, index) => {
+      return <li key={index}>{n}</li>;
     });
-
     return (
       <div className="container section project-details">
         <div className="card z-depth-0">
           <div className="card-content">
             <span className="card-title">{recipe.title}</span>
-            {ingredientList}
-            <br />
+            <ul>{ingredientList}</ul>
             <p>{recipe.directions}</p>
           </div>
           <div className="card-action grey lighten-4 grey-text">
