@@ -12,12 +12,18 @@ const RecipeDetails = props => {
     return <Redirect to="/signin" />;
   }
   if (recipe) {
+    const list = recipe.ingredients.split('\n');
+    const ingredientList = list.map(n => {
+      return <p key={n}>{n}</p>;
+    });
+
     return (
       <div className="container section project-details">
         <div className="card z-depth-0">
           <div className="card-content">
             <span className="card-title">{recipe.title}</span>
-            <p>{recipe.ingredients}</p>
+            {ingredientList}
+            <br />
             <p>{recipe.directions}</p>
           </div>
           <div className="card-action grey lighten-4 grey-text">
