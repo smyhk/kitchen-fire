@@ -41,7 +41,7 @@ class Navbar extends Component {
                 <img src="img/mario-bg.png" alt="mario" />
               </div>
               <Link to="">
-                <img className="circle" src="img/robot.png" alt="" />
+                <img className="circle" src="img/robot.png" alt="user" />
               </Link>
               <Link to="">
                 <span className="black-text name">
