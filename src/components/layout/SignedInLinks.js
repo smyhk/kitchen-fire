@@ -5,7 +5,7 @@ import { signOut } from '../../store/actions/authActions';
 
 const SignedInLinks = props => {
   return (
-    <ul className="right">
+    <ul className="">
       <li>
         <NavLink to="/create">New Recipe</NavLink>
       </li>
@@ -15,9 +15,9 @@ const SignedInLinks = props => {
         </Link>
       </li>
       <li>
-        <NavLink to="/" className="btn btn-floating blue lighten-1">
+        <Link to="/" className="btn-large btn-floating blue lighten-1">
           {props.profile.initials}
-        </NavLink>
+        </Link>
       </li>
     </ul>
   );
