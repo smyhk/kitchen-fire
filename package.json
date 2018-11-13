@@ -31,7 +31,5 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "devDependencies": {
-    "react-test-renderer": "^16.6.3"
-  }
+  "devDependencies": {}
 }

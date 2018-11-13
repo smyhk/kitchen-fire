@@ -36,13 +36,13 @@ class LandingPage extends Component {
   render() {
     return (
       <div id="home" className="scrollspy">
-        <div class="slider">
-          <ul class="slides">
+        <div className="slider">
+          <ul className="slides">
             <li>
               <img src="http://lorempixel.com/400/200/food" alt="random food" />
-              <div class="caption center-align">
+              <div className="caption center-align">
                 <h2>Store all your recipes in the cloud!</h2>
-                <h5 class="light grey-text text-lighten-3">
+                <h5 className="light grey-text text-lighten-3">
                   Here's our small slogan.
                 </h5>
               </div>
@@ -52,9 +52,9 @@ class LandingPage extends Component {
                 src="http://lorempixel.com/400/200/food/1"
                 alt="random food"
               />
-              <div class="caption left-align">
+              <div className="caption left-align">
                 <h4>Never lose a recipe again!</h4>
-                <h5 class="light grey-text text-lighten-3">
+                <h5 className="light grey-text text-lighten-3">
                   Here's our small slogan.
                 </h5>
               </div>
@@ -64,9 +64,9 @@ class LandingPage extends Component {
                 src="http://lorempixel.com/400/200/food/2"
                 alt="random food"
               />
-              <div class="caption right-align">
+              <div className="caption right-align">
                 <h4>Share your recipes with family and friends!</h4>
-                <h5 class="light grey-text text-lighten-3">
+                <h5 className="light grey-text text-lighten-3">
                   Here's our small slogan.
                 </h5>
               </div>
@@ -76,9 +76,9 @@ class LandingPage extends Component {
                 src="http://lorempixel.com/400/200/food/3"
                 alt="random food"
               />
-              <div class="caption center-align">
+              <div className="caption center-align">
                 <h4>Access your recipes from anywhere!</h4>
-                <h5 class="light grey-text text-lighten-3">
+                <h5 className="light grey-text text-lighten-3">
                   Here's our small slogan.
                 </h5>
               </div>
