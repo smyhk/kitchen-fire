@@ -7,7 +7,9 @@ import { signOut } from '../../store/actions/authActions';
 class SignedInLinks extends Component {
   componentDidMount() {
     const drop = document.querySelector('.dropdown-trigger');
-    M.Dropdown.init(drop, {});
+    M.Dropdown.init(drop, {
+      hover: true
+    });
   }
   render() {
     return (
