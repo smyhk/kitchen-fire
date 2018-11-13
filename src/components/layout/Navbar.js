@@ -23,16 +23,13 @@ class Navbar extends Component {
       <div className="navbar-fixed">
         <nav className="nav-wrapper grey darken-3">
           <div className="container">
-            <Link to="/" className="brand-logo">
+            <a href="#home" className="brand-logo">
               KitchenFire
-            </Link>
+            </a>
             <Link to="" data-target="mobile-nav" className="sidenav-trigger">
               <i className="material-icons">menu</i>
             </Link>
             <ul className="right hide-on-med-and-down">
-              <li>
-                <a href="#home">Home</a>
-              </li>
               <li>
                 <a href="#search">Search</a>
               </li>
@@ -62,9 +59,6 @@ class Navbar extends Component {
                 </span>
               </Link>
             </div>
-          </li>
-          <li>
-            <a href="#home">Home</a>
           </li>
           <li>
             <a href="#search">Search</a>
