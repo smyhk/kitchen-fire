@@ -20,7 +20,7 @@ class Navbar extends Component {
       <SignedOutLinks />
     );
     return (
-      <div>
+      <div className="navbar-fixed">
         <nav className="nav-wrapper grey darken-3">
           <div className="container">
             <Link to="/" className="brand-logo">
@@ -30,6 +30,21 @@ class Navbar extends Component {
               <i className="material-icons">menu</i>
             </Link>
             <ul className="right hide-on-med-and-down">
+              <li>
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#search">Search</a>
+              </li>
+              <li>
+                <a href="#popular">Popular Recipes</a>
+              </li>
+              <li>
+                <a href="#gallery">Gallery</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
               <li>{links}</li>
             </ul>
           </div>
@@ -37,9 +52,7 @@ class Navbar extends Component {
         <ul className="sidenav sidenav-close" id="mobile-nav">
           <li>
             <div className="user-view">
-              <div className="background">
-                <img src="img/mario-bg.png" alt="mario" />
-              </div>
+              <div className="background" />
               <Link to="">
                 <img className="circle" src="img/robot.png" alt="user" />
               </Link>
@@ -49,6 +62,24 @@ class Navbar extends Component {
                 </span>
               </Link>
             </div>
+          </li>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#search">Search</a>
+          </li>
+          <li>
+            <a href="#popular">Popular Recipes</a>
+          </li>
+          <li>
+            <a href="#gallery">Gallery</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <li>
+            <div class="divider" />
           </li>
           <li>{links}</li>
         </ul>

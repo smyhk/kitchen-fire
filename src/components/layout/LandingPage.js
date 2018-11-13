@@ -28,10 +28,14 @@ class LandingPage extends Component {
     // Material Boxed
     const boxed = document.querySelectorAll('.materialboxed');
     M.Materialbox.init(boxed, {});
+
+    // Scrollspy
+    const spy = document.querySelectorAll('.scrollspy');
+    M.ScrollSpy.init(spy, {});
   }
   render() {
     return (
-      <div className="">
+      <div id="home" className="scrollspy">
         <div class="slider">
           <ul class="slides">
             <li>
@@ -129,7 +133,7 @@ class LandingPage extends Component {
               <div className="col s12 m4">
                 <div className="card-panel">
                   <i className="material-icons large grey-text">wifi</i>
-                  <h4>Connect With Us</h4>
+                  <h4>Connect</h4>
                   <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Atque, nesciunt.
@@ -140,7 +144,7 @@ class LandingPage extends Component {
           </div>
         </section>
         {/* Popular Recipes */}
-        <section id="id" className="section section-popular scrollspy">
+        <section id="popular" className="section section-popular scrollspy">
           <div className="container">
             <div className="row">
               <h4 className="center">
@@ -309,6 +313,57 @@ class LandingPage extends Component {
             </div>
           </div>
         </section>
+        {/* Contact */}
+        <section id="contact" className="section section-contact scrollspy">
+          <div className="container">
+            <div className="row">
+              <div className="col s12 m6">
+                <div className="card-panel grey white-text center">
+                  <i className="material-icons">email</i>
+                  <h5>Contct us for specials</h5>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Deserunt esse odit illum sunt vel soluta incidunt error
+                    totam explicabo qui?
+                  </p>
+                </div>
+                <ul className="collection with-header">
+                  <li className="collection-header">
+                    <h4>Location</h4>
+                  </li>
+                  <li className="collection-item">KitchenFire LTD.</li>
+                  <li className="collection-item">555 Beach Rd, Suite 33</li>
+                  <li className="collection-item">Miami, FL 55555</li>
+                </ul>
+              </div>
+              <div className="col s12 m6">
+                <div className="card-panel grey lighten-3">
+                  <h5>Please fill out this form</h5>
+                  <div className="input-field">
+                    <input type="text" placeholder="Name" />
+                  </div>
+                  <div className="input-field">
+                    <input type="text" placeholder="Email" />
+                  </div>
+                  <div className="input-field">
+                    <input type="text" placeholder="Phone" />
+                  </div>
+                  <div className="input-field">
+                    <textarea
+                      className="materialize-textarea"
+                      placeholder="Enter message"
+                    />
+                  </div>
+                  <input type="submit" value="Submit" className="btn" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* Footer */}
+        <footer className="section grey darken-2 white-text center">
+          <p className="flow-text">KitchenFire &copy; 2018</p>
+        </footer>
       </div>
     );
   }
