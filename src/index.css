@@ -9,7 +9,7 @@ body {
   /* background: url(/img/mario-bg.png) no-repeat; */
   background-size: 100%;
   background-position: bottom;
-  background-color: #ffffff;
+  background-color: lightgray;
   min-height: 100%;
 }
 

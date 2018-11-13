@@ -77,7 +77,6 @@ class Navbar extends Component {
           <li>
             <div class="divider" />
           </li>
-          <li>{links}</li>
         </ul>
       </div>
     );
