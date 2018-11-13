@@ -20,32 +20,34 @@ class Navbar extends Component {
       <SignedOutLinks />
     );
     return (
-      <div className="navbar-fixed">
-        <nav className="nav-wrapper grey darken-3">
-          <div className="container">
-            <a href="#home" className="brand-logo">
-              KitchenFire
-            </a>
-            <Link to="" data-target="mobile-nav" className="sidenav-trigger">
-              <i className="material-icons">menu</i>
-            </Link>
-            <ul className="right hide-on-med-and-down">
-              <li>
-                <a href="#search">Search</a>
-              </li>
-              <li>
-                <a href="#popular">Popular Recipes</a>
-              </li>
-              <li>
-                <a href="#gallery">Gallery</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
-              <li>{links}</li>
-            </ul>
-          </div>
-        </nav>
+      <div>
+        <div className="navbar-fixed">
+          <nav className="nav-wrapper grey darken-3">
+            <div className="container">
+              <a href="#home" className="brand-logo">
+                KitchenFire
+              </a>
+              <Link to="" data-target="mobile-nav" className="sidenav-trigger">
+                <i className="material-icons">menu</i>
+              </Link>
+              <ul className="right hide-on-med-and-down">
+                <li>
+                  <a href="#search">Search</a>
+                </li>
+                <li>
+                  <a href="#popular">Popular Recipes</a>
+                </li>
+                <li>
+                  <a href="#gallery">Gallery</a>
+                </li>
+                <li>
+                  <a href="#contact">Contact</a>
+                </li>
+                <li>{links}</li>
+              </ul>
+            </div>
+          </nav>
+        </div>
         <ul className="sidenav sidenav-close" id="mobile-nav">
           <li>
             <div className="user-view">
