@@ -39,7 +39,10 @@ class LandingPage extends Component {
         <div className="slider">
           <ul className="slides">
             <li>
-              <img src="http://lorempixel.com/400/200/food" alt="random food" />
+              <img
+                src="https://source.unsplash.com/1600x900/?bbq"
+                alt="random food"
+              />
               <div className="caption center-align">
                 <h2>Store all your recipes in the cloud!</h2>
                 <h5 className="light grey-text text-lighten-3">
@@ -49,7 +52,7 @@ class LandingPage extends Component {
             </li>
             <li>
               <img
-                src="http://lorempixel.com/400/200/food/1"
+                src="https://source.unsplash.com/1600x900/?soup"
                 alt="random food"
               />
               <div className="caption left-align">
@@ -61,7 +64,7 @@ class LandingPage extends Component {
             </li>
             <li>
               <img
-                src="http://lorempixel.com/400/200/food/2"
+                src="https://source.unsplash.com/1600x900/?pizza"
                 alt="random food"
               />
               <div className="caption right-align">
@@ -73,7 +76,7 @@ class LandingPage extends Component {
             </li>
             <li>
               <img
-                src="http://lorempixel.com/400/200/food/3"
+                src="https://source.unsplash.com/1600x900/?casserole"
                 alt="random food"
               />
               <div className="caption center-align">
@@ -153,7 +156,10 @@ class LandingPage extends Component {
               <div className="col s12 m4">
                 <div className="card">
                   <div className="card-image">
-                    <img src="http://lorempixel.com/400/200/food" alt="food" />
+                    <img
+                      src="https://source.unsplash.com/1600x900/?food"
+                      alt="food"
+                    />
                     <span className="card-title">Street Tacos</span>
                   </div>
                   <div className="card-content">
@@ -165,7 +171,10 @@ class LandingPage extends Component {
               <div className="col s12 m4">
                 <div className="card">
                   <div className="card-image">
-                    <img src="http://lorempixel.com/400/200/food" alt="food" />
+                    <img
+                      src="https://source.unsplash.com/1600x900/?food"
+                      alt="food"
+                    />
                     <span className="card-title">Lazagna Beebop!</span>
                   </div>
                   <div className="card-content">
@@ -177,7 +186,10 @@ class LandingPage extends Component {
               <div className="col s12 m4">
                 <div className="card">
                   <div className="card-image">
-                    <img src="http://lorempixel.com/400/200/food" alt="food" />
+                    <img
+                      src="https://source.unsplash.com/1600x900/?food"
+                      alt="food"
+                    />
                     <span className="card-title">Reindeer Scat</span>
                   </div>
                   <div className="card-content">

@@ -10,6 +10,10 @@ class Navbar extends Component {
   componentDidMount() {
     const sideNav = document.querySelector('.sidenav');
     M.Sidenav.init(sideNav);
+
+    // Scrollspy
+    const spy = document.querySelectorAll('.scrollspy');
+    M.ScrollSpy.init(spy, {});
   }
   render() {
     const { auth, profile } = this.props;
@@ -30,7 +34,7 @@ class Navbar extends Component {
               <Link to="" data-target="mobile-nav" className="sidenav-trigger">
                 <i className="material-icons">menu</i>
               </Link>
-              <ul className="right hide-on-med-and-down">
+              <ul className="right hide-on-med-and-down scrollspy">
                 <li>
                   <a href="#home">Home</a>
                 </li>
